@@ -6,8 +6,6 @@ Library           String
 
 *** Variables ***
 ${BROWSER}        chrome
-${URL}            https://www.google.com
-${PROFILE_PATH}   /home/jenkins/chrome-profiles
 
 *** Test Cases ***
 Open Google and Verify Title
