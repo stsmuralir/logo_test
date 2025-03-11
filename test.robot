@@ -21,7 +21,7 @@ Open Google and Verify Title
 *** Keywords ***
 Setup Environment
     # Ensure profile directory exists
-    Create Directory    ${PROFILE_PATH}    recursive=True
+    Create Directory    ${PROFILE_PATH} 
     # Fix permissions for Docker if needed
     Run Keyword And Ignore Error    Run Process    chown -R jenkins:jenkins ${PROFILE_PATH}
 
