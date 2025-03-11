@@ -11,7 +11,6 @@ ${PROFILE_PATH}   /home/jenkins/chrome-profiles
 
 *** Test Cases ***
 Open Google and Verify Title
-    [Setup]    Setup Environment
     # Ensure profile directory exists
     Create Directory    ${PROFILE_PATH} 
     # Fix permissions for Docker if needed
