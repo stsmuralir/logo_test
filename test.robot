@@ -12,14 +12,6 @@ ${PROFILE_PATH}   /home/jenkins/chrome-profiles
 *** Test Cases ***
 Open Google and Verify Title
     [Setup]    Setup Environment
-    Open Browser    ${URL}    ${BROWSER}    options=${CHROME_OPTIONS}
-    ${title}=    Get Title
-    Log    Title: ${title}
-    Should Be Equal As Strings    ${title}    Google
-    [Teardown]    Close Browser
-
-*** Keywords ***
-Setup Environment
     # Ensure profile directory exists
     Create Directory    ${PROFILE_PATH} 
     # Fix permissions for Docker if needed
@@ -42,3 +34,9 @@ Setup Environment
     ...    --disable-gpu
     ...    --remote-debugging-port=9222
     ...    --headless=new
+    Open Browser    ${URL}    ${BROWSER}    options=${CHROME_OPTIONS}
+    ${title}=    Get Title
+    Log    Title: ${title}
+    Should Be Equal As Strings    ${title}    Google
+    [Teardown]    Close Browser
+ 
