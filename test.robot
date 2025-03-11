@@ -1,9 +1,11 @@
 *** Settings ***
 Library    RPA.Browser.Selenium
 
+
+
 *** Test Cases ***
-Open Firefox and Verify Title
-    Open Browser    https://www.google.com    firefox
+Open Firefox in Headless Mode and Verify Title
+    Open Browser    https://www.google.com    firefox    options=add_argument("--headless")
     ${title}=    Get Title
     Log    Title is: ${title}
     Should Be Equal As Strings    ${title}    Google
