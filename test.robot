@@ -9,4 +9,8 @@ Open Firefox in Headless Mode and Verify Title
     ${title}=    Get Title
     Log    Title is: ${title}
     Should Be Equal As Strings    ${title}    Google
+    maximize browser window
+    ${width}=    Execute JavaScript    return window.innerWidth;
+    ${height}=    Execute JavaScript    return window.innerHeight;
+    Log To Console    Browser Resolution: ${width} x ${height}
     Close Browser
