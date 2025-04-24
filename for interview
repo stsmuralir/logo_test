@@ -1,0 +1,16 @@
+url - https://jsonplaceholder.typicode.com/posts
+
+payload - {
+  "userId": 1,
+  "title": "Test automation is amazing",
+  "body": "This is a sample payload for testing a POST request."
+}
+
+
+https://secure.taxbandits.com/login/
+
+1. Login
+  Credential - murali.r+live_test@spantechnologyservices.com / Span@123
+2. Go to payer
+3. Add new payer detail by entering all details
+4. Verify details are added or not 
